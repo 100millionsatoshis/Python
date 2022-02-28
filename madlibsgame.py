@@ -1,0 +1,7 @@
+person = input("insert first character")
+another_person = input("insert another character")
+relationship = input("insert relationship between characters")
+adjective = input("write how characters lived")
+print("Once upon a time")
+print("there were a" +person + "and a" + another_person + ".")
+print("they were not " + relationship + "but lived" + adjective + ".")
