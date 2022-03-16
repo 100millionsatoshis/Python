@@ -1,0 +1,31 @@
+# exponent function allow us to take a certain number and raise it to a specific power.
+
+print(2 ** 3)
+
+
+def raise_to_power(base_number, power_number):
+    # we don't necessarily know the value of the power_number. if we were trying to square or cube the base_number
+    # we could write:
+    return base_number * base_number
+    # this would square the number
+
+
+# or:
+
+
+def raise_to_power_2(base_number, power_number):
+    return base_number * base_number * base_number
+
+
+# the problem is we don't know what is the value of power_number, and it could change based on use's decision.
+# so do solve this we need to use "for loop".
+
+
+def raise_to_power_3(base_num, power_num):
+    result = 1
+    for index in range(power_num):
+        result = result * base_num
+    return result
+
+
+print(raise_to_power_3(5, 4))
