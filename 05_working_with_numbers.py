@@ -1,7 +1,10 @@
-
+# a whole number 
 print(7)
+# a decimal number
 print(7.4677)
+# a negative number
 print(-7.25)
+# a basic calculation
 print(7 + 3.5)
 print(7 - 9.3)
 print(12 * 12)
