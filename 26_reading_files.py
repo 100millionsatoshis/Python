@@ -1,34 +1,45 @@
-# this lesson is about reading from external files in python
-# it can a text file or csv file or a html file. For that you can use something called python read command.
+# this lesson is about reading external files in python
+# it can be a text file or csv file or a html file. For that you can use something called python read command.
 
-# open("countries.txt", "read")
+# open("26_26_countries.txt")
 
 # after name of the file we can indicate mode, such as: "r", stand for read,
 # "w" stands for write and "a" which stand for append.
 # One more mode is # r+ which means read and write
 # Now we save file as variable
-
-countries = open("countries.txt", "r")
-print(countries)
-# this did not work.
 # now we make sure if file is readable.
-print(countries.readable())
+producers = open("26_producers.txt", "r")
+print(producers.readable())
+producers.close()
+
+# if we set the mode to w and check it is readable we get False result
+
+# these 3 lines of code below somehow deletes everything from a file.
+# producers = open("26_producers.txt", "w")
+# print(producers.readable())
+# producers.close()
 
 # once you open a file, make sure to close it once you are done with it.
-countries.close()
 
-# below I show an example of readable giving us false result due to file open mode is w
-# countries_and_its_capitals = open("countries.txt", "w")
-# print(countries_and_its_capitals.readable())
-# countries.close()
+# Now let us read the entire file:
 
-countries_and_its_capitals = open("countries.txt", "r")
-print(countries_and_its_capitals.read())
-countries.close()
+list_of_countries = open("26_countries.txt", "r")
+print(list_of_countries.read())
+list_of_countries.close()
 
-print("we can read first line by using readline function")
+print("_____________________________________________")
+# readline function gets first line from the file and moves the cursor to the next line
+bucket_list = open("26_countries.txt", "r")
+print(bucket_list.readline())
+print(bucket_list.readline())
+bucket_list.close()
 
-countries_and_its_capitals = open("countries.txt", "r")
-print(countries_and_its_capitals.readline())
-print(countries_and_its_capitals.readline())
-countries.close()
+print("______________________________________________")
+# readlines function takes all the lines from the text and puts them into list
+staff = open("26_employees.txt")
+print(staff.readlines())
+staff.close()
+
+laptops = open("26_producers.txt")
+for laptop in laptops.readlines():
+    print(laptop)
