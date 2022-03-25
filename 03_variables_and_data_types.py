@@ -42,3 +42,8 @@ print("At current price of " + price + " per unit, " + cryptocurrency + " holds 
 
 is_male = True
 is_tasty = False
+
+
+# If the name of variable consists of two or more words, use underscores to separate them. By the way, we cannot use 
+# spaces or other symbols in variable names (only alphabets, numbers and underscore)
+
