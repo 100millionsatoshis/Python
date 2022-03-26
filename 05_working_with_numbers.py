@@ -1,16 +1,29 @@
-# a whole number 
+# Integers are numbers without decimal parts. For example, 5, -11, 0, 12, etc.
+# floats are numbers with decimal parts.
 print(7)
-# a decimal number
 print(7.4677)
-# a negative number
 print(-7.25)
-# a basic calculation
+# "+" is python arithmetic operator called addition.
 print(7 + 3.5)
+# "-" is python arithmetic operator called subtraction
 print(7 - 9.3)
+# "*" is python arithmetic operator called multiplication
 print(12 * 12)
+# "/" forward slash is an arithmetic operator called division
+print(10 / 3)
+# "%" percentage sign is an arithmetic operator called modulo. The Python modulo operator calculates the remainder
+# of dividing two values. The first number is divided by the second then the remainder is returned.
+print(10 % 3)
+# "**" is an arithmetic operator called exponentiation. It takes 1st number and multiplies it as much times as
+# indicated in the 2nd number.
+print(2**3)
+# "//" is an arithmetic operator called floor division
+print("floor division 9//3 =", 9//3)
+# arithmetic operators are executed "first came, first served" basis
 print(2 * 3 + 4)
+# unless you separate them with parenthesis
 print(2 * (3 + 4))
-print(50 % 3)
+
 my_number = -8
 print(abs(my_number))
 print(pow(2, 256))
