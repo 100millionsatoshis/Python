@@ -9,7 +9,7 @@ print(7 + 3.5)
 print(7 - 9.3)
 # "*" is python arithmetic operator called multiplication
 print(12 * 12)
-# "/" forward slash is an arithmetic operator called division
+# "/" forward slash is an arithmetic operator called division. In the example below, 10 is devidend, 3 is divisor. 
 print(10 / 3)
 # "%" (percentage sign) is an arithmetic operator called modulo. (sometimes it is called remainder)
 # The Python modulo operator calculates the remainder of dividing two values. The first number is divided
