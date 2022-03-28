@@ -38,12 +38,14 @@ print("Market decided that " + cryptocurrency + " is " + position_in_the_market 
                                                                                   "at the moment")
 print("At current price of " + price + " per unit, " + cryptocurrency + " holds strong fundamentals ")
 
-# a bullion value is a True or False value
+# a boolean value is a True or False value
 
 is_male = True
 is_tasty = False
 
-
-# If the name of variable consists of two or more words, use underscores to separate them. By the way, we cannot use 
+print(9 > 10)
+print(9 == 10)
+print(9 < 10)
+# If the name of variable consists of two or more words, use underscores to separate them. By the way, we cannot use
 # spaces or other symbols in variable names (only alphabets, numbers and underscore)
-
+# By the way, variable names are case-sensitive.
