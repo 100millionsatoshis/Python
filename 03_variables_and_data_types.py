@@ -47,5 +47,5 @@ print(9 > 10)
 print(9 == 10)
 print(9 < 10)
 # If the name of variable consists of two or more words, use underscores to separate them. By the way, we cannot use
-# spaces or other symbols in variable names (only alphabets, numbers and underscore)
+# spaces or other symbols in variable names (only alphabets, numbers and underscore but cannot start with numbers)
 # By the way, variable names are case-sensitive.
