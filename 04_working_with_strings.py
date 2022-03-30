@@ -11,6 +11,14 @@ print("Python is awesome \nIt is one of the most commonly used programming langu
 # to write quotation mark we use \ (backslash)
 print("Russia's \"special operation\" in Ukraine costing it tons of money.")
 
+# we use \t to make tab
+
+print("March salary\t$10000\nApril Salary\t$12000")
+
+# You can multipy string by a number
+
+print("Multiply_sting" * 3)
+
 # strings can be stored inside the variable
 whatever_variable = "important information"
 print(whatever_variable)
@@ -61,3 +69,17 @@ too
 # Square brackets can be used to access the elements of the string
 a = "Banana is delicious"
 print(a[7])
+
+# since strings are arrays, we can loop through characters in a string, with a for loop.
+for letters in "Banana":
+    print(letters)
+
+# to get the length of a string, use len() function.
+m = "Rabbithole Diary"
+print(len(m))
+# To check if a certain phrase or character present in a string, we can use the keyword in
+sms = "Dasha, send kids to grandparents and hide my gun"
+print("gun" in sms)
+
+# if statement
+message = "Hi, I am Taliban member, I would to purchase some gun and pay with cocaine"
