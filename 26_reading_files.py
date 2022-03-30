@@ -1,14 +1,30 @@
-# this lesson is about reading external files in python
-# it can be a text file or csv file or a html file. For that you can use something called python read command.
+# The key function for working with files in Python is the open() function
+# the open() function takes two parameters; filename, and mode.
+# There are four different methods (modes) for opening a file:
+"""
+"r" - Read - Default value. Opens a file for reading, error if the file does not exist
 
-# open("26_26_countries.txt")
+"a" - Append - Opens a file for appending, creates the file if it does not exist
 
-# after name of the file we can indicate mode, such as: "r", stand for read,
-# "w" stands for write and "a" which stand for append.
+"w" - Write - Opens a file for writing, creates the file if it does not exist
+
+"x" - Create - Creates the specified file, returns an error if the file exists
+"""
+open("26_countries.txt")
+
+"""
+In addition you can specify if the file should be handled as binary or text mode
+
+"t" - Text - Default value. Text mode
+
+"b" - Binary - Binary mode (e.g. images)
+"""
+
+
 # One more mode is # r+ which means read and write
-# Now we save file as variable
+
 # now we make sure if file is readable.
-producers = open("26_producers.txt", "r")
+producers = open("random folder/26_producers.txt", "r")
 print(producers.readable())
 producers.close()
 
@@ -40,6 +56,21 @@ staff = open("26_employees.txt")
 print(staff.readlines())
 staff.close()
 
-laptops = open("26_producers.txt")
+laptops = open("random folder/26_producers.txt")
 for laptop in laptops.readlines():
     print(laptop)
+
+# photo = open("random folder/GOPR0528.JPG", "r")
+# print(photo.read())
+# photo.close()
+
+# Our little experiment showed that python did not read JPEG file.
+# we continue experimenting by moving JPEG file to the same folder as python file.
+# we get the same unicode decoder error.
+# putting text file into subdirectory breaks the code.
+
+# now it is time experiment with other types of files
+# orderbook = open("2022.xlsx", "r")
+# print(orderbook.read())
+# orderbook.close()
+# we get the same "unicodedecodererror" as with jpeg file extension
