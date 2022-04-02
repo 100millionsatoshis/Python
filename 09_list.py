@@ -25,3 +25,21 @@ things = ["string", 0, [1, 2, number], 4.56]
 print(things[1])
 print(things[2])
 print(things[2][2])
+
+# Nested lists can be used to represent 2d grids, such as matrices.
+m = [
+    [1, 2, 3],
+    [4, 5, 6]
+]
+print(m[1][2])
+"""
+A matrix like structure can be used in cases where you need to store data in row-column format. For example, 
+when creating a ticketing program, the seat numbers can be stored in a matrix, with there corresponding rows and 
+numbers.
+Some types, such as strings, can be indexed like lists. Indexing strings behaves as though you are indexing a list
+containing each character of the string. 
+"""
+string = "hello world"
+print(string[2])
+
+# trying to access a non-existing index will produce an error. 
