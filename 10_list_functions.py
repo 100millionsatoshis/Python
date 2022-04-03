@@ -58,3 +58,8 @@ print("Jim" in participants)
 # to check if an item is not in a list, you can use the not operator.
 print("Pamela" not in participants)
 print("Jim" not in participants)
+# to get the number of items in a list we use len function.
+print(len(participants))
+# Unlike the index of the items, len does not start with 0.
+print("Show participant list item with maximum value: " + str(max(participants)))
+print("Show lucky_number list item with minimum value: " + str(min(lucky_numbers)))
