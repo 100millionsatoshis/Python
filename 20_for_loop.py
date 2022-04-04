@@ -9,8 +9,8 @@ breakfast_options = ["scrambled_eggs", "sausages", "oatmeal"]
 for my_options in breakfast_options:
     print(my_options)
 
-for raqamlar in range(5):
-    print(raqamlar)
+for my_numbers in range(5):
+    print(my_numbers)
 
 for raqamlar in range(10, 15):
     print(raqamlar)
@@ -26,3 +26,13 @@ for ruyxat in range(5):
         print("first iteration")
     else:
         print("Not first iteration")
+"""
+# The code below defines a count variable iterates over the string and calculates the count of "a" letters in it.
+"""
+
+phrase = "Kiev is the capital of Ukraine"
+count = 0
+for letter in phrase:
+    if letter == "a":
+        count += 1
+print(count)
