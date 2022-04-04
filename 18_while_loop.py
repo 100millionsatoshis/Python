@@ -61,3 +61,4 @@ while m < 7:
         print("skipping 3")
         continue
     print(m)
+# If the while loop condition is False before starting the first iteration, the while loop will not even start running. 
