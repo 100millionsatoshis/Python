@@ -36,3 +36,4 @@ for letter in phrase:
     if letter == "a":
         count += 1
 print(count)
+# smiliar to while loops, the break and continue statements can be used in for loops to stop the loop or jump into next iteration. 
