@@ -33,10 +33,7 @@ def my_func():
 
 
 # functions will not execute itself automatically. We have to call them. The code block within every function starts
-# with a colon (:) and is indented. 
-
-my_func()
-
+# with a colon (:) and is indented.
 
 # we can give functions parameter.
 
@@ -46,3 +43,9 @@ def send_invitation(name, event):
 
 
 send_invitation("Tom", "birthday party")
+
+"""
+Function arguments can be used as variables inside the function definition. However, they cannot be referenced outside
+of the function's definition. This also applies to other variables created inside a function. 
+
+"""
