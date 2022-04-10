@@ -47,5 +47,16 @@ send_invitation("Tom", "birthday party")
 """
 Function arguments can be used as variables inside the function definition. However, they cannot be referenced outside
 of the function's definition. This also applies to other variables created inside a function. 
-
+Although they are created differently from normal variables, functions are just like any other kind of value. 
+They can be assigned and reassigned to a variables, and later referenced by those names. 
 """
+
+
+def multiply(x, y):
+    return x * y
+
+
+a = 4
+b = 7
+operation = multiply
+print(operation(a, b))
