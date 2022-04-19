@@ -187,15 +187,3 @@ x = txt.zfill(10)
 print(x)
 # The zfill() method adds zeros (0) at the beginning of the string, until it reaches the specified length.
 # If the value of the len parameter is less than the length of the string, no filling is done.
-
-# isnumeric()
-# Check if all the characters in the text are numeric:
-txt = "565543"
-x = txt.isnumeric()
-print(x)
-"""
-The isnumeric() method returns True if all the characters are numeric (0-9), otherwise False.
-Exponents, like ² and ¾ are also considered to be numeric values.
-"-1" and "1.5" are NOT considered numeric values, because all the characters in the string must be numeric, 
-and the - and the . are not.
-"""
