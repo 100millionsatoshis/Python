@@ -39,3 +39,35 @@ print(math.factorial(12))
 # Note: This method only accepts positive integers.
 # The factorial of a number is the sum of the multiplication, of all the whole numbers, from our specified number
 # down to 1. For example, the factorial of 6 would be 6 x 5 x 4 x 3 x 2 x 1 = 720
+
+# math.isinf() Checks whether a number is infinite or not.
+print("The result of 10 divided by 3 is infinite number", math.isinf(10/3))
+
+# math.pow() Returns the value of x to the power of y
+print("4 raised to the power of 3 is", math.pow(4, 3))
+print("56 is infinite number", math.isinf(56))
+print("-45.34 is infinite number", math.isinf(-45.34))
+print("+45.34 is infinite number", math.isinf(+45.34))
+print("math.inf is infinite number", math.isinf(math.inf))
+print(math.isinf(float("nan")))
+print(math.isinf(float("inf")))
+print(math.isinf(float("-inf")))
+print("-math.inf is infinite number", math.isinf(-math.inf))
+
+# math.fsum() Returns the sum of all items in any iterable (tuples, arrays, lists, etc.)
+print(math.fsum([1, 2, 3, 4, 5]))
+print(math.fsum([100, 400, 340, 500]))
+print(math.fsum([1.7, 0.3, 1.5, 4.5]))
+
+# math.gcd() 	Returns the greatest common divisor of two integers
+print("Greatest common divisor of 14 and 35 is", math.gcd(14, 35))
+
+# math.prod() Returns the product of all the elements in an iterable.
+sequence = (2, 3, 4)
+print("The product of sequence (2, 3, 4) is", math.prod(sequence))
+
+# math.sqrt() Returns the square root of a number
+print("Square root of 9 is", math.sqrt(9))
+# returns float value
+
+# math.isqrt() 	Rounds a square root number downwards to the nearest integer.
