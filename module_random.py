@@ -1,6 +1,6 @@
 # seed() Initialize the random number generator
 import random
-random.seed(10)
+random.seed(11)
 print(random.random())
 # The seed() method is used to initialize the random number generator.
 # The random number generator needs a number to start with (a seed value), to be able to generate a random number.
@@ -23,3 +23,12 @@ print(random.random())
 # getrandbits() Returns a number representing the random bits.
 print("This is an 8 bits sized integer:", random.getrandbits(8))
 # returns an 8 bit sized integer
+
+# randrange() Returns a random number between the given range
+print("Return a number between 3 and 9:", random.randrange(3, 9))
+# random.randrange(start, stop, step)
+# start Optional. An integer specifying at which position to start.
+# Default 0
+# stop 	Required. An integer specifying at which position to end.
+# step 	Optional. An integer specifying the incrementation.
+# Default 1
