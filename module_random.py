@@ -39,3 +39,9 @@ print("Return a number between 3 and 9:", random.randint(3, 9))
 # syntax: random.randint(start, stop)
 # start: Required. An integer specifying at which position to start.
 # stop:	Required. An integer specifying at which position to end.
+
+# randint() Returns a random number between the given range:
+mylist = ["apple", "banana", "cherry"]
+print("Return a random element from a list:", random.choice(mylist))
+# The choice() method returns a randomly selected element from the specified sequence.
+# The sequence can be a string, a range, a list, a tuple or any other kind of sequence.
