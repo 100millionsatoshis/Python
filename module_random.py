@@ -32,3 +32,10 @@ print("Return a number between 3 and 9:", random.randrange(3, 9))
 # stop 	Required. An integer specifying at which position to end.
 # step 	Optional. An integer specifying the incrementation.
 # Default 1
+
+# randint() Returns a random number between the given range.
+print("Return a number between 3 and 9:", random.randint(3, 9))
+# Note: This method is an alias for randrange(start, stop+1).
+# syntax: random.randint(start, stop)
+# start: Required. An integer specifying at which position to start.
+# stop:	Required. An integer specifying at which position to end.
