@@ -40,8 +40,27 @@ print("Return a number between 3 and 9:", random.randint(3, 9))
 # start: Required. An integer specifying at which position to start.
 # stop:	Required. An integer specifying at which position to end.
 
-# randint() Returns a random number between the given range:
+# choice() 	Returns a random element from the given sequence:
 mylist = ["apple", "banana", "cherry"]
 print("Return a random element from a list:", random.choice(mylist))
 # The choice() method returns a randomly selected element from the specified sequence.
 # The sequence can be a string, a range, a list, a tuple or any other kind of sequence.
+
+# choices() Returns a list with a random selection from the given sequence:
+print("Return a list with 14 items. The list should contain a randomly selection of the values from a specified \n "
+      "list, and there should be 10 times higher possibility to select \"apple\" than the other two: \n",
+      random.choices(mylist, weights=[3, 0, 1], k=14))
+
+# The choices() method returns a list with the randomly selected element from the specified sequence.
+# You can weigh the possibility of each result with the weights parameter or the cum_weights parameter.
+# The sequence can be a string, a range, a list, a tuple or any other kind of sequence.
+# Syntax:
+# random.choices(sequence, weights=None, cum_weights=None, k=1)
+# sequence: Required. A sequence like a list, a tuple, a range of numbers etc.
+# weights: Optional. A list were you can weigh the possibility for each value.
+# Default: None
+# cum_weights: Optional. A list were you can weigh the possibility for each value, only this time the possibility is
+# accumulated.
+# Example: normal weights list: [2, 1, 1] is the same as this cum_weights list; [2, 3, 4].
+# Default None
+# k Optional. An integer defining the length of the returned list
