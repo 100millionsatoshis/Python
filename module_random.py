@@ -83,3 +83,12 @@ def special_shuffle():
 
 random.shuffle(breakfast_options, special_shuffle)
 print(breakfast_options)
+
+# sample() Returns a given sample of a sequence:
+print("Return a list that contains any 2 of the items from a list:", random.sample(breakfast_options, k=2))
+# The sample() method returns a list with a randomly selection of a specified number of items from a sequnce.
+# Note: This method does not change the original sequence.
+# Syntax:
+# random.sample(sequence, k)
+# sequence: Required. A sequence. Can be any sequence: list, set, range etc.
+# k: Required. The size of the returned list
