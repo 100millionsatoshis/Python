@@ -64,3 +64,22 @@ print("Return a list with 14 items. The list should contain a randomly selection
 # Example: normal weights list: [2, 1, 1] is the same as this cum_weights list; [2, 3, 4].
 # Default None
 # k Optional. An integer defining the length of the returned list
+
+# shuffle() Takes a sequence and returns the sequence in a random order:
+breakfast_options = ["oatmeal", "sausage", "sandwich", "musli", "cheese", "pizza"]
+random.shuffle(breakfast_options)
+print(breakfast_options)
+# The shuffle() method takes a sequence, like a list, and reorganize the order of the items.
+# Syntax:
+# random.shuffle(sequence, function)
+# sequence 	Required. A sequence.
+# function 	Optional. The name of a function that returns a number between 0.0 and 1.0.
+# If not specified, the function random() will be used
+
+
+def special_shuffle():
+    return 0.4
+
+
+random.shuffle(breakfast_options, special_shuffle)
+print(breakfast_options)
