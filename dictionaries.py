@@ -14,6 +14,12 @@ monthConversions = {
     "Nov": "November",
     "Dec": "December",
 }
+
+# Dictionaries are used to store data values in key:value pairs.
+# A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+# As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
+# Dictionaries are written with curly brackets, and have keys and values:
+print(monthConversions)
 print(monthConversions["Nov"])
 print(monthConversions.get("Jan"))
 print(monthConversions.get("Luv"))
