@@ -8,3 +8,5 @@ print(x)
 # Return the year and name of weekday:
 print(x.year)
 print(x.strftime("%A"))
+
+# I should continue this topic once I practice object and class module.
